@@ -16,10 +16,10 @@ class Triangle(Figure):
 
     @property
     def get_area(self):
-        # Вычисляем полупериметр треугольника
+        """Вычисляем полупериметр треугольника"""
         s = (self.side_a + self.side_b + self.side_c) / 2
 
-        # Вычисляем площадь треугольника по формуле Герона
+        """Вычисляем площадь треугольника по формуле Герона"""
         area = round(math.sqrt(s * (s - self.side_a) * (s - self.side_b) * (s - self.side_c)), 2)
 
         return area
